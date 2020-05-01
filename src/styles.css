@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background: rgb(0, 31, 255);
+    background: linear-gradient(90deg, rgba(0, 31, 255, 0.5242471988795518) 0%, rgba(0, 0, 0, 0.6587009803921569) 49%, rgba(0, 232, 255, 0.4962359943977591) 100%);
+}
+
+h1 {
+    background: rgb(0, 31, 255);
+    background: linear-gradient(90deg, rgba(0, 31, 255, 0.5242471988795518) 0%, rgba(0, 0, 0, 0.6587009803921569) 49%, rgba(0, 232, 255, 0.4962359943977591) 100%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px #fff;
+}
+
+p {
+    background: rgb(0, 31, 255);
+    background: linear-gradient(90deg, rgba(0, 31, 255, 0.5242471988795518) 0%, rgba(0, 0, 0, 0.6587009803921569) 49%, rgba(0, 232, 255, 0.4962359943977591) 100%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px #fff;
+}
+
+div {
+    background: rgb(0, 31, 255);
+    background: linear-gradient(90deg, rgba(0, 31, 255, 0.5242471988795518) 0%, rgba(0, 0, 0, 0.6587009803921569) 49%, rgba(0, 232, 255, 0.4962359943977591) 100%);
+    color: white;
+    text-align: center;
+}

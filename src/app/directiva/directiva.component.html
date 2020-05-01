@@ -1,0 +1,35 @@
+<button type="button" class="btn btn-success" *ngIf="isHabilitado == false" (click)="habilitar()">Mostrar Lista</button>
+<button type="button" class="btn btn-danger" *ngIf="isHabilitado == true" (click)="habilitar()">Ocultar Lista</button>
+
+<div class="card" *ngIf="isHabilitado == true">
+    <div class="card-header">
+        Práctica de Angular
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenido</h1>
+        <p class="lead">A continuación se muestran las notas del curso</p>
+        <hr class="my-4">
+        <table class="table table-sm table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Observación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let estudiante of estudiantes">
+                    <th scope="col">{{estudiante.codigo}}</th>
+                    <th scope="col">{{estudiante.nombre}}</th>
+                    <th scope="col">{{estudiante.apellido}}</th>
+                    <th scope="col">{{estudiante.nota}}</th>
+                    <th scope="col" *ngIf="estudiante.nota < 3" style="background-color:#FC0000 ;">{{estudiante.observacion}}</th>
+                    <th scope="col" *ngIf="estudiante.nota >= 3" style="background-color:#299B0B ;">{{estudiante.observacion}}</th>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
